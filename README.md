@@ -1,38 +1,5 @@
-## Overview of the Analysis
-
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms).
-
-## Results
-
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
-
-* Machine Learning Model 1:
-    * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-## Summary
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
-
-
-
-# Module 12 Report
-
-## Overview of the Analysis
-
 ### **Purpose of the Analysis**
-The purpose of this analysis was to use machine learning to predict if loans were considered **"healthy" (0) or "high-risk" (1)** depending on seven different financial factors provided. At the end of it we measured how accurately our learning model was  classifying these loans. 
+The purpose of this analysis was to use machine learning to predict if loans were considered **"healthy" (0) or "high-risk" (1)** depending on seven different financial factors provided. At the end of it we measured how accurately our learning model was classifying these loans. 
 
 ### **Dataset and Prediction Objective**
 The dataset contains **financial information** on borrowers, including:
@@ -80,4 +47,4 @@ In this project we are looking to predict `loan_status`. I used the len function
 
 ## Summary and Recomnedation
 
-The model demonstrates exceptional performance in credit risk classification, with a confusion matrix showing 18,668 true negatives, 91 false positives, 2 false negatives, and 623 true positives. The classification report confirms perfect scores for non-risk cases and strong performance for risk cases, with a precision of 0.87 and a recall of 1.00 for the risk class, ensuring nearly all risky cases are detected. This high recall is particularly critical in credit risk scenarios where missing a high-risk applicant can be costly. Although there is a slight drop in precision leading to a few false positives, this trade-off is acceptable given the priority to avoid missed risks. Therefore, the model is recommended for use by the company, with the option to further adjust the decision threshold if minimizing false positives becomes a priority.
+The model demonstrates exceptional performance in credit risk classification, with a confusion matrix showing 18,668 true negatives, 91 false positives, 2 false negatives, and 623 true positives. The classification report confirms perfect scores for non-risk cases and strong performance for risk cases, with a precision of 0.87 and a recall of 1.00 for the risk class, ensuring nearly all risky cases are detected. This high recall is particularly critical in credit risk scenarios where missing a high-risk applicant can be costly. Although there is a slight drop in precision, 0.87 is still a high accuracy score and I believe it to be safe.
